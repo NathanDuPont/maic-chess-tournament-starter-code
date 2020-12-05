@@ -16,6 +16,12 @@ class StubAgent:
         """
         self.is_white = is_white
 
+    def get_team_name(self):
+        """
+        Report your team name. Used for scoring purposes.+
+        """
+        return "stub"
+
     def heuristic(self, board):
         """
         Determine whose favor the board is in, and by how much.
