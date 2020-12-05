@@ -16,7 +16,8 @@ class StubAgent:
         """
         self.is_white = is_white
 
-    def get_team_name(self):
+    @staticmethod
+    def get_team_name():
         """
         Report your team name. Used for scoring purposes.+
         """
