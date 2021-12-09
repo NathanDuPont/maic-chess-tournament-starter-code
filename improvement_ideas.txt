@@ -1,0 +1,27 @@
+A list of possible improvements. There is definitely more than what is on this list,
+but these are just some good ideas for improvements
+
+ideas to improve quality of decision making:
+    - fiddle with piece weights
+    - add piece positions to the weights
+        - for instance, you want your knights in the center of the field instead of in the corners
+    - add different heuristics for the different stages of the game
+        - probably don't want to immediately want to start trading pieces
+    - increase search depth
+        - This will drastically slow down decision time. Look below for ways to potentially speed it up
+
+ideas to improve search depth:
+    - Multithread searching through the possibility trees (assuming this is allowed)
+    - check out the MTD search algorithm instead of alpha beta to improve the search speed
+        - this might be pretty difficult
+
+ideas to improve the chess bot:
+    - if you want to really go above and beyond, the best bots, such as alpha go by google, use 
+    deep q neural networks. I have also seen other chess bots using the LSTM networks. However,
+    chess has been known to be pretty difficult to implement this way. Good Luck!
+
+Hints:
+    - Mostly you will want to be fiddling with and adding new heuristics.
+    - If you get to a point where your AI is just moving the same piece back and forth, then that
+    means that your heuristics for that piece is too high.
+    - Here are some chess tips, maybe you can make some heuristics out of them (https://thechessworld.com/articles/training-techniques/basic-chess-tips/)
